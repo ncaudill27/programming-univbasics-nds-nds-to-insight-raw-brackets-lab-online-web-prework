@@ -1,7 +1,11 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 
+<<<<<<< HEAD
 def directors_totals(nds)
+=======
+def directer_totals(nds)
+>>>>>>> 0862a7e6aaac36f9ce6771689567e13c7c72befc
 	result = {}
 	# First we must iterate through an Array of Hashes
 	outer_shell = 0
@@ -18,7 +22,11 @@ def directors_totals(nds)
 			iter_movies += 1
 		end
 		# Add saved director location and values vessel into Hash form. Preparing for return.
+<<<<<<< HEAD
 		result.store(director, gross_values.sum)
+=======
+		result.store(director, gross_values.sum.to_s)
+>>>>>>> 0862a7e6aaac36f9ce6771689567e13c7c72befc
 		outer_shell += 1
 	end
 	result
